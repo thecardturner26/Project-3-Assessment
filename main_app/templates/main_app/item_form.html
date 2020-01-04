@@ -13,11 +13,11 @@
    <hr>
    <form action="" method="POST" class="pure-form">
     {% csrf_token %}
-       Description:
-       <br>
-       <input type="text" name="description">
+    <table>
+        {{ form.as_table }}
+    </table>
 
-       <input type="submit" value="ADD ITEM"/>
+    <input type="submit" value="ADD ITEM"/>
    </form>
 </body>
 </html>
